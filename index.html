@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
     <title>Home Solution</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </head>
 <body>
-<div class="container-wrap">
+<div class="container-wrap" id="start">
     <div class="container">
         <header class="kv-container">
             <div class="language">
-                <a href="index.html">ua</a>
-                <a href="index.eng.html">eng</a>
+                    <a class="kv-language active" href="index.html">ua</a>
+                    <a class="kv-language " href="index.eng.html">eng</a>
             </div>
 <section class="top">
             <div class="logo">
@@ -23,14 +24,14 @@
                 <p>ПН-ПТ с 9:00 до 18:00</p>
             </div>
 </section>
-            <nav>
+            <nav id="=menu">
             <ul>
-                <li><a href="">Про нас</a></li>
-                <li><a href="">Дизайн</a></li>
-                <li><a href="">Меблі</a></li>
-                <li><a href="">Послуги</a></li>
-                <li><a href="">Портфоліо</a></li>
-                <li><a href="">Контакти</a></li>
+                <li><a href="#about-us" class="scrollto">Про нас</a></li>
+                <li><a href="#design">Дизайн</a></li>
+                <li><a href="#furniture">Меблі</a></li>
+                <li><a href="#services">Послуги</a></li>
+                <li><a href="#portfolio" class="scrollto">Портфоліо</a></li>
+                <li><a href="#contacts">Контакти</a></li>
             </ul>
             </nav>
 
@@ -56,7 +57,7 @@
 
 </div>
         <div class="content">
-            <div class="about-us kv-container">
+            <div class="about-us kv-container" id="about-us">
                 <h2>ПРО НАС</h2>
                 <p>Home Solutions представляє собою групу ініціативних людей - фахівців в області дизайну інтер'єру.</p>
             <p>
@@ -95,7 +96,7 @@
             <a href="">Переглянути детальніше</a>
         </div>
         </div>
-        <div class="portfolio">
+        <div class="portfolio" id="portfolio">
             <h2 class="kv-container">ПОРТФОЛІО</h2>
             <div class="portfolio-wrap">
             <div class="portfolio-item">
@@ -128,8 +129,16 @@
         </div>
         <div class="our-team">
     <h2 class="kv-container">НАША КОМАНДА</h2>
+                <div class="anchor">
+                    <a href="#start" class="scrollto">&#8679;</a>
+            </div>
         </div>
         </div>
+
+        </div>
+
+
+
         <footer>
             <div class="footer-wrap kv-container">
             <div class="logo-footer ">
@@ -150,7 +159,7 @@
     </div>
 
 </div>
-<script src="js/main.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>
