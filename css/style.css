@@ -25,7 +25,7 @@ float: right;
     height: 100%;
 }
 .contact-us-header{
-    width: 15%;
+    width: 18%;
 }
 nav{
  width: 100%;
@@ -82,6 +82,9 @@ nav ul li a:hover{
 .banner img{
     width: 100%;
 }
+.about-us{
+    padding-bottom: 20px;
+}
 .about-us li{
     margin: 5px;
 }
@@ -122,7 +125,7 @@ nav ul li a:hover{
 .our-team h2{
     border-top: 1px solid black;
     padding: 30px;
-}   
+}
 /*/////////////////////Footer//////////////*/
 footer{
     background: #2E2E2E;
@@ -132,7 +135,11 @@ footer{
     display: flex;
 }
 .logo-footer{
+    margin: 10px;
     width: 20%;
+}
+.logo-footer img {
+    width: 100%;
 }
 .footer-item{
     margin-left: 80px;
