@@ -3,18 +3,19 @@ body{
     padding:0;
 }
 .kv-container{
-    width: 1040px;
+    width: 80%;
     margin: 0 auto;
 }
 
 /*/////////////////////header//////////////*/
 .language{
-
+float: right;
 }
 .top{
     border-top: 1px solid black;
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 .logo{
     width: 35%;
@@ -39,13 +40,57 @@ nav ul li{
 }
 nav ul li a{
     text-decoration: none;
+    color: #2E2E2E;
+}
+nav ul li a:hover{
+    color: #59AF30;
+}
+/*/////////////////////Banner//////////////*/
+.mySlides {display: none;}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    margin: auto;
+    max-height: 312px;
+    overflow: hidden;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
 }
 /*/////////////////////content//////////////*/
+.banner img{
+    width: 100%;
+}
+.about-us li{
+    margin: 5px;
+}
 .services-wrap{
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     display: flex;
     justify-content: center;
+    padding-bottom: 20px;
 }
 .services-item{
     text-align: center;
@@ -60,6 +105,7 @@ nav ul li a{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 20px;
 
 
 }
@@ -70,6 +116,25 @@ nav ul li a{
 .portfolio-item img{
      width: 100%;
  }
+.portfolio h2{
+    padding-top: 30px;
+}
 .our-team h2{
     border-top: 1px solid black;
+    padding: 30px;
+}   
+/*/////////////////////Footer//////////////*/
+footer{
+    background: #2E2E2E;
+    color:#B5B5B5;
 }
+.footer-wrap{
+    display: flex;
+}
+.logo-footer{
+    width: 20%;
+}
+.footer-item{
+    margin-left: 80px;
+}
+
