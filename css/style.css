@@ -7,6 +7,7 @@ body{
     margin: 0 auto;
 }
 
+
 /*/////////////////////header//////////////*/
 .language{
 float: right;
@@ -37,7 +38,7 @@ margin-left: 10px;
     height: 100%;
 }
 .contact-us-header{
-    width: 18%;
+    width: 20%;
 }
 nav{
  width: 100%;
@@ -64,7 +65,7 @@ nav ul li a:hover{
 .slideshow-container {
     position: relative;
     margin: auto;
-    max-height: 312px;
+   height: auto;
     overflow: hidden;
 }
 .banner{
@@ -77,8 +78,7 @@ nav ul li a:hover{
 }
 .mySlides img{
     max-width: 100%;
-    height: auto;
-    /*max-height: 312px;*/
+   max-height: 312px;
 }
 
 /* Fading animation */
@@ -153,20 +153,22 @@ nav ul li a:hover{
 .slider {
     position: relative;
     overflow: hidden;
-    margin: 0 auto;
-    width: 98%;
 }
 
 .slider__wrapper {
     display: flex;
     transition: transform 0.6s ease;
+
 }
 
 .slider__item {
     flex: 0 0 20%;
     max-width: 50%;
-}
 
+}
+.slider__item p{
+    text-align: center;
+}
 .slider__control {
     position: absolute;
     top: 50%;
@@ -180,7 +182,6 @@ nav ul li a:hover{
     height: 50px;
     transform: translateY(-50%);
     background: rgba(0, 0, 0, .5);
-    cursor:pointer;
 }
 
 .slider__control:hover,
@@ -216,14 +217,14 @@ nav ul li a:hover{
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 }
 
+
     .text{
         text-align: center;
-        margin-right: 45px;
     }
 
     /*////////////////////////tabs/////////////////////*/
 .tab{
-    width: 70%;
+    width: 75%;
     margin: 0 auto;
     text-align: center;
     padding: 20px;
@@ -284,4 +285,153 @@ footer{
  }
 .anchor a:hover{
     color: #59AF30;
+}
+
+
+/*/////////////////////////////////mobile//////////////////////*/
+
+@media only screen and (max-width: 1040px) {
+    .slider__item {
+        flex: 0 0 25%;
+    }
+    .portfolio-item{
+        width: 30%;
+    }
+    .contact-us-header {
+        width: 23%;
+    }
+    .tab{
+        width: 90%;
+    }
+    .tab button.tablinks{
+        margin-left: 20px;
+    }
+    .services-wrap{
+        flex-wrap: wrap;
+    }
+    .footer-item {
+        padding-top: 10px;
+        margin-left: 30px;
+        font-size: 14px;
+    }
+
+
+}
+    @media only screen and (max-width: 847px) {
+    .slider__item {
+        flex: 0 0 33.33333%;
+    }
+        .portfolio-item{
+            width: 45%;
+            text-align: center;
+        }
+
+
+        .contact-us-header {
+            width: 32%;
+        }
+        .tab{
+            width: 90%;
+        }
+        .tab button.tablinks{
+            margin-left:0;
+        }
+        .logo{
+            width: 40%;
+            height: 100px;
+        }
+        .services-item{
+            width: 100%;
+        }
+        .services-item img{
+            height: 300px;
+        }
+        .footer-item{
+            margin-left: 40px;
+        }
+        .logo-footer {
+            margin-top: 10px;
+            width: 50%;
+        }
+        .information{
+            display: none;
+        }
+        .contact-phone{
+            margin-left: 75px;
+            padding: 0;
+            width: 100%;
+            text-align: center;
+        }
+        .contact-phone p{
+
+        }
+        .anchor{
+            left: 87%;
+        }
+
+    }
+@media only screen and (max-width: 620px) {
+    .slider__item {
+        flex: 0 0 50%;
+    }
+    .contact-us-header {
+        width: 40%;
+    }
+    .logo {
+        width: 50%;
+    }
+    .logo-footer {
+        margin-top: 10px;
+        width: 55%;
+    }
+    .contact-phone {
+        margin-left: 20px;
+    }
+
+}
+@media only screen and (max-width: 480px) {
+    .slider__item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .portfolio-item{
+        width: 100%;
+    }
+    .services-item{
+        width: 100%;
+    }
+
+    .tab{
+        padding: 0;
+    }
+    .contact-phone{
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+    .anchor{
+        left: 80%;
+    }
+    .contact-us-header{
+        display: none;
+    }
+    .logo{
+        width: 100% ;
+    }
+    nav{
+        display: none;
+    }
+    .banner{
+        margin-top: 20px;
+    }
+    h2{
+        text-align: center;
+    }
+    .about-us ul{
+        margin: 0;
+        padding: 0;
+    }
+    .logo-footer {
+       display: none;
+    }
 }

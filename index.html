@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <title>Home Solution</title>
     <script type="text/javascript" src="js/jquery-3.5.0.min.js"></script>
@@ -27,11 +28,11 @@
             <nav id="=menu">
             <ul>
                 <li><a href="#about-us" class="scrollto">Про нас</a></li>
-                <li><a href="#design">Дизайн</a></li>
-                <li><a href="#furniture">Меблі</a></li>
-                <li><a href="#services">Послуги</a></li>
+                <li><a href="#design" class="scrollto">Дизайн</a></li>
+                <li><a href="#furniture" class="scrollto">Меблі</a></li>
+                <li><a href="#services" class="scrollto">Послуги</a></li>
                 <li><a href="#portfolio" class="scrollto">Портфоліо</a></li>
-                <li><a href="#contacts">Контакти</a></li>
+                <li><a href="#contacts"  class="scrollto">Контакти</a></li>
             </ul>
             </nav>
 
@@ -41,12 +42,12 @@
                 <div class="mySlides fade">
                     <img src="image/Loreal_1.jpg" style="width:100%">
                 </div>
-                <div class="mySlides fade">
-                    <img src="image/OF_Kontinium_010.jpg" style="width:100%">
-                </div>
-                <div class="mySlides fade">
-                    <img src="image/OF_INTERP_002.jpg" style="width:100%">
-                </div>
+<!--                <div class="mySlides fade">-->
+<!--                    <img src="image/OF_Kontinium_010.jpg" style="width:100%">-->
+<!--                </div>-->
+<!--                <div class="mySlides fade">-->
+<!--                    <img src="image/OF_INTERP_002.jpg" style="width:100%">-->
+<!--                </div>-->
 
             </div>
             <br>
@@ -64,7 +65,8 @@
                 <p>
                     Рішення від Home Solutions - це практичність і функціональність заснована на застосуванні доступних матеріалів, адже справжня естетика завжди прихована в уявній простоті, за якої в сучасному дизайні стоїть величезна праця фахівців і цілий ряд високотехнологічних розробок. Home Solutions - індивідуальні, стильні рішення, реалізовані на найвищому рівні!
                 </p>
-                <ul>Послуги компанії:
+                <ul>
+                    <h4>Послуги компанії:</h4>
                 <li>Аналіз і підбір приміщення.</li>
                 <li>Створення індивідуального дизайн-проекту інтер'єру.</li>
                 <li>Ремонтно - будівельні роботи.</li>
@@ -75,17 +77,17 @@
                 </ul>
             </div>
         <div class="services-wrap kv-container">
-        <div class="services-item">
+        <div class="services-item" id="design">
             <h3>Дизайн</h3>
             <img src="image/OF_INTERP_002.jpg" alt="">
             <a href="">Переглянути детальніше</a>
         </div>
-        <div class="services-item">
+        <div class="services-item" id="furniture">
             <h3>Меблі</h3>
             <img src="image/OF_Kontinium_010.jpg" alt="">
             <a href="">Переглянути детальніше</a>
         </div>
-        <div class="services-item">
+        <div class="services-item" id="services">
             <h3>Послуги</h3>
             <img src="image/OF_Kontinium_001.jpg" alt="">
             <a href="">Переглянути детальніше</a>
@@ -124,7 +126,7 @@
 
         </div>
 
-        <div class="our-team">
+        <div class="our-team" id="contacts">
     <h2 class="kv-container">НАША КОМАНДА</h2>
             <div class="tab">
                 <button class="tablinks active" onclick="openTabs(event, 'T1')">Partnership Board</button>
@@ -138,23 +140,38 @@
                 <div class="slider">
                     <div class="slider__wrapper">
                         <div class="slider__item">
-                            <img  src="image/person_1.jpg" alt="">
+                            <p>
+                                <img  src="image/person_1.jpg" alt="">
+                            </p>
+
                             <div class="text">Caption Text</div>
                         </div>
                         <div class="slider__item">
-                            <img  src="image/person_2.jpg" alt="">
+                            <p>
+                                <img  src="image/person_2.jpg" alt="">
+                            </p>
+
                             <div class="text">Caption Text</div>
                         </div>
                         <div class="slider__item">
-                            <img  src="image/person_3.jpg" alt="">
+                            <p>
+                                <img  src="image/person_3.jpg" alt="">
+                            </p>
+
                             <div class="text">Caption Text</div>
                         </div>
                         <div class="slider__item">
-                            <img  src="image/person_4.jpg" alt="">
+                            <p>
+                                <img  src="image/person_4.jpg" alt="">
+                            </p>
+
                             <div class="text">Caption Text</div>
                         </div>
                         <div class="slider__item">
-                            <img  src="image/person_5.jpg" alt="">
+                            <p>
+                                <img  src="image/person_5.jpg" alt="">
+                            </p>
+
                             <div class="text">Caption Text</div>
                         </div>
                     </div>
