@@ -27,12 +27,12 @@
             </section>
             <nav id="menu">
                 <ul>
-                    <li><a href="">About us</a></li>
-                    <li><a href="">Design</a></li>
-                    <li><a href="">Furniture</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Portfolio</a></li>
-                        <li><a href="">Contacts</a></li>
+                    <li><a href="#about-us" class="scrollto">About us</a></li>
+                    <li><a href="#design">Design</a></li>
+                    <li><a href="#furniture">Furniture</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio" class="scrollto">Portfolio</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
                 </ul>
             </nav>
 
@@ -54,7 +54,7 @@
         </div>
 
         <div class="content">
-            <div class="about-us kv-container">
+            <div class="about-us kv-container" id="about-us">
                 <h2>ABOUT US</h2>
                     <p>Home Solutions is a group of initiative people - experts in the field of interior design.</p>
 
@@ -96,7 +96,7 @@
                     <a href=""> Learn more </a>
                 </div>
             </div>
-            <div class="portfolio">
+            <div class="portfolio" id="portfolio">
                 <h2 class="kv-container">PORTFOLIO</h2>
                 <div class="portfolio-wrap">
                     <div class="portfolio-item">
@@ -130,33 +130,51 @@
             <div class="our-team">
                 <h2 class="kv-container">OUR TEAM</h2>
 
-                <div class="slider">
-                    <div class="slider__wrapper">
-                        <div class="slider__item">
-                            <img  src="image/person_1.jpg" alt="">
-                            <div class="text">Caption Text</div>
-                        </div>
-                        <div class="slider__item">
-                            <img  src="image/person_2.jpg" alt="">
-                            <div class="text">Caption Text</div>
-                        </div>
-                        <div class="slider__item">
-                            <img  src="image/person_3.jpg" alt="">
-                            <div class="text">Caption Text</div>
-                        </div>
-                        <div class="slider__item">
-                            <img  src="image/person_4.jpg" alt="">
-                            <div class="text">Caption Text</div>
-                        </div>
-                        <div class="slider__item">
-                            <img  src="image/person_5.jpg" alt="">
-                            <div class="text">Caption Text</div>
-                        </div>
-                    </div>
-                    <a class="slider__control slider__control_left"  role="button"></a>
-                    <a class="slider__control slider__control_right slider__control_show"  role="button"></a>
+                <div class="tab">
+                    <button class="tablinks active" onclick="openTabs(event, 'T1')">Partnership Board</button>
+                    <button class="tablinks" onclick="openTabs(event, 'T2')">Senior Partners</button>
+                    <button class="tablinks" onclick="openTabs(event, 'T3')">Partners</button>
+                    <button class="tablinks" onclick="openTabs(event, 'T4')">Associate Partners</button>
+                    <button class="tablinks" onclick="openTabs(event, 'T5')">Associate</button>
                 </div>
 
+                <div id="T1" class="tabcontent" style=" display:  block;">
+                    <div class="slider">
+                        <div class="slider__wrapper">
+                            <div class="slider__item">
+                                <img  src="image/person_1.jpg" alt="">
+                                <div class="text">Caption Text</div>
+                            </div>
+                            <div class="slider__item">
+                                <img  src="image/person_2.jpg" alt="">
+                                <div class="text">Caption Text</div>
+                            </div>
+                            <div class="slider__item">
+                                <img  src="image/person_3.jpg" alt="">
+                                <div class="text">Caption Text</div>
+                            </div>
+                            <div class="slider__item">
+                                <img  src="image/person_4.jpg" alt="">
+                                <div class="text">Caption Text</div>
+                            </div>
+                            <div class="slider__item">
+                                <img  src="image/person_5.jpg" alt="">
+                                <div class="text">Caption Text</div>
+                            </div>
+                        </div>
+                        <a class="slider__control slider__control_left"  role="button"></a>
+                        <a class="slider__control slider__control_right slider__control_show"  role="button"></a>
+                    </div>
+                </div>
+
+                <div id="T2" class="tabcontent">
+                </div>
+                <div id="T3" class="tabcontent">
+                </div>
+                <div id="T4" class="tabcontent">
+                </div>
+                <div id="T5" class="tabcontent">
+                </div>
 
                 <div class="anchor">
                     <a href="#start" class="scrollto">&#8679;</a>

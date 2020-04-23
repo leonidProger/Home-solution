@@ -126,35 +126,53 @@
 
         <div class="our-team">
     <h2 class="kv-container">НАША КОМАНДА</h2>
-
-            <div class="slider">
-                <div class="slider__wrapper">
-                    <div class="slider__item">
-                        <img  src="image/person_1.jpg" alt="">
-                         <div class="text">Caption Text</div>
-                    </div>
-                    <div class="slider__item">
-                        <img  src="image/person_2.jpg" alt="">
-                        <div class="text">Caption Text</div>
-                    </div>
-                    <div class="slider__item">
-                        <img  src="image/person_3.jpg" alt="">
-                        <div class="text">Caption Text</div>
-                    </div>
-                    <div class="slider__item">
-                        <img  src="image/person_4.jpg" alt="">
-                        <div class="text">Caption Text</div>
-                    </div>
-                    <div class="slider__item">
-                        <img  src="image/person_5.jpg" alt="">
-                        <div class="text">Caption Text</div>
-                    </div>
-                </div>
-                <a class="slider__control slider__control_left"  role="button"></a>
-                <a class="slider__control slider__control_right slider__control_show"  role="button"></a>
+            <div class="tab">
+                <button class="tablinks active" onclick="openTabs(event, 'T1')">Partnership Board</button>
+                <button class="tablinks" onclick="openTabs(event, 'T2')">Senior Partners</button>
+                <button class="tablinks" onclick="openTabs(event, 'T3')">Partners</button>
+                <button class="tablinks" onclick="openTabs(event, 'T4')">Associate Partners</button>
+                <button class="tablinks" onclick="openTabs(event, 'T5')">Associate</button>
             </div>
 
-                <div class="anchor">
+            <div id="T1" class="tabcontent" style=" display:  block;">
+                <div class="slider">
+                    <div class="slider__wrapper">
+                        <div class="slider__item">
+                            <img  src="image/person_1.jpg" alt="">
+                            <div class="text">Caption Text</div>
+                        </div>
+                        <div class="slider__item">
+                            <img  src="image/person_2.jpg" alt="">
+                            <div class="text">Caption Text</div>
+                        </div>
+                        <div class="slider__item">
+                            <img  src="image/person_3.jpg" alt="">
+                            <div class="text">Caption Text</div>
+                        </div>
+                        <div class="slider__item">
+                            <img  src="image/person_4.jpg" alt="">
+                            <div class="text">Caption Text</div>
+                        </div>
+                        <div class="slider__item">
+                            <img  src="image/person_5.jpg" alt="">
+                            <div class="text">Caption Text</div>
+                        </div>
+                    </div>
+                    <a class="slider__control slider__control_left"  role="button"></a>
+                    <a class="slider__control slider__control_right slider__control_show"  role="button"></a>
+                </div>
+            </div>
+
+            <div id="T2" class="tabcontent">
+            </div>
+            <div id="T3" class="tabcontent">
+            </div>
+            <div id="T4" class="tabcontent">
+            </div>
+            <div id="T5" class="tabcontent">
+            </div>
+
+            <div class="anchor">
                     <a href="#start" class="scrollto">&#8679;</a>
             </div>
         </div>
