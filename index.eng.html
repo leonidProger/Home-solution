@@ -4,10 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Home Solution</title>
     <script type="text/javascript" src="js/jquery-3.5.0.min.js"></script>
 
-<body>
+<body class="mobile">
+<div class="mobile-container" style="display: none">
+    <i id="burger" class="material-icons" onclick="burger()">menu</i>
+    <i id="quit" class="material-icons" onclick="quit()">clear</i>
+    <div id="links">
+        <a href="#about-us" class="scrollto" onclick="quit()">About us</a>
+        <a href="#design" class="scrollto" onclick="quit()">Design</a>
+        <a href="#furniture" class="scrollto" onclick="quit()">Furniture</a>
+        <a href="#services" class="scrollto" onclick="quit()">Services</a>
+        <a href="#portfolio" class="scrollto" onclick="quit()">Portfolio</a>
+        <a href="#contacts"  class="scrollto" onclick="quit()">Contacts</a>
+
+    </div>
+</div>
+
 <div class="container-wrap" id="start">
     <div class="container">
         <header class="kv-container">

@@ -156,3 +156,22 @@ function openTabs(evt, cityName) {
 }
 
 
+function burger(){
+    var burger = document.getElementById('burger');
+    var links = document.getElementById('links');
+    var quit = document.getElementById('quit');
+    burger.style.padding = '30px 100% 600px 100%';
+    links.style.display = 'flex';
+    quit.style.display = 'inline';
+    document.body.style.overflow='hidden';
+}
+
+function quit(){
+    var burger = document.getElementById('burger');
+    var links = document.getElementById('links');
+    var quit = document.getElementById('quit');
+    burger.style.padding = '16px 16px 32px 32px';
+    links.style.display = 'none';
+    quit.style.display = 'none';
+    document.body.style.overflow='inherit';
+}
