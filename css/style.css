@@ -427,6 +427,7 @@ footer{
         }
         .slider__item{
             max-height: 300px;
+            margin-bottom: 50px;
         }
         .slider__item p{
             height: 100%;
